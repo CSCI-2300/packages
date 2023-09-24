@@ -1,6 +1,6 @@
 # Manually compiling code with packages is hard
 This example demonstrates the challenges that come up when you compile code that is organized in packages manually (with javac) 
-The src directory contains two sub-directories: first and second. Code in <code>second</code> depends on the code in <code>firsr</code>. Therefore, we must compile code in <code>first</code> first. We also want to place compiled code into its own directory: <code>bin</code>
+The src directory contains two sub-directories: first and second. Code in <code>second</code> depends on the code in <code>first</code>. Therefore, we must compile code in <code>first</code> first. We also want to place compiled code into its own directory: <code>bin</code>
 
 ```
 cd src/first
