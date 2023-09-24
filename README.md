@@ -1,5 +1,6 @@
 # Manually compiling code with packages is hard
-This example demonstrates the challenges that come up when you compile code that is organized in packages manually (with javac) 
+This example demonstrates the challenges that come up when you compile code that is organized in packages manually (with javac).
+
 The src directory contains two sub-directories: first and second. Code in <code>second</code> depends on the code in <code>first</code>. Therefore, we must compile code in <code>first</code> first. We also want to place compiled code into its own directory: <code>bin</code>
 
 ```
@@ -7,7 +8,11 @@ cd src/first
 javac -d ../../bin *.java
 ```
 
-Now, navigate to the <code>bin</code>directory. You'll see that it contains a <code>first</code> sub-directory, that got created as a result of compilation. This is because the code we were compiling is part of a package called first.
+Now, navigate to the <code>bin</code>directory at the root of your repository clone
+```
+cd ../../bin
+```
+You'll see that it contains a <code>first</code> sub-directory, that got created as a result of compilation. This is because the code we were compiling is part of a package called first.
 
 Now, in order to compile the code in the <code>second</code> directory, we need to ensure that our CLASSPATH contains the <code>bin/first</code> directory. 
 
