@@ -18,11 +18,11 @@ Now, in order to compile the code in the <code>second</code> directory, we need 
 
 From the root of our repository clone, we can update CLASSPATH (in bash shell) as follows on Linux or Mac: 
 ```
-export CLASSPATH=$CLASSPATH:$(pwd)/bin/first
+export CLASSPATH=$CLASSPATH:$(pwd)/bin
 ```
 or on Windows as:
 ```
-export CLASSPATH=$CLASSPATH;$(pwd)/bin/first
+export CLASSPATH=$CLASSPATH;$(pwd)/bin
 ```
 
 Now we can compile the code in the <code>second</code> subdirectory:
